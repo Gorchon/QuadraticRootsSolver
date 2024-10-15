@@ -2,7 +2,7 @@
 
 Este programa está diseñado para calcular las raíces reales de una ecuación cuadrática de la forma:
 
-![Descripción de la imagen](/images/imageForReadme.jpg)
+![LOL](/images/imageForReadme.jpg)
 
 
 ## Objetivo
@@ -27,8 +27,8 @@ A continuación, se explica cómo compilar y ejecutar el programa en un entorno 
 Primero, clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+git clone https://github.com/Gorchon/QuadraticRootsSolver.git
+cd QuadraticRootsSolver
 ```
 
 ### 2. Crear el Directorio de Compilación
@@ -42,7 +42,7 @@ cd build
 
 ### 3. Ejecutar CMake para Generar los Archivos de Compilación
 
-Utiliza CMake para generar los archivos de compilación. Esto se hace desde el directorio `build` que acabas de crear:
+Utiliza CMake para generar los archivos de compilación. Esto se hace desde el directorio `build` que recien creamos
 
 ```bash
 cmake ..
@@ -79,7 +79,9 @@ El resultado esperado será:
 
 ### 6. Probar el Programa con un Archivo de Prueba
 
-Si deseas verificar que las pruebas automáticas del código funcionan correctamente, puedes ejecutar el archivo de prueba `test_findroots`. Esta prueba compara las raíces calculadas con los valores esperados para asegurarse de que el programa funciona como debería.
+Nota: Esta sección es un extra que se ha añadido como buena práctica de testing automatizado. No era un requisito en las instrucciones pero es útil para garantizar que el programa funciona correctamente.
+
+Si deseas verificar que las pruebas automáticas del código funcionan correctamente, puedes ejecutar el archivo de prueba test_findroots. Esta prueba compara las raíces calculadas con los valores esperados para asegurarse de que el programa funciona como debería.
 
 Para ejecutar las pruebas:
 
@@ -95,7 +97,7 @@ Prueba pasada!
 
 ### 7. Comportamiento en Caso de No Existir Raíces Reales
 
-En caso de que los coeficientes \(a\), \(b\), y \(c\) proporcionados no resulten en raíces reales (por ejemplo, si el discriminante es negativo), el programa devolverá un conjunto vacío `{}`. Por ejemplo, al ejecutar:
+En caso de que los coeficientes a, b, y c proporcionados no resulten en raíces reales (por ejemplo, si el discriminante es negativo), el programa devolverá un conjunto vacío `{}`. Por ejemplo, al ejecutar:
 
 ```bash
 ./findroots 1 2 3
@@ -109,11 +111,9 @@ El resultado será:
 
 ### Explicación del Algoritmo Implementado
 
-El programa utiliza la fórmula cuadrática para calcular las raíces de la ecuación \(ax^2 + bx + c = 0\):
+El programa utiliza la fórmula cuadrática para calcular las raíces de la ecuación 
 
-\[
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-\]
+![LOL](/images/quadbutton1.jpg)
 
 Dependiendo del valor del discriminante (\(b^2 - 4ac\)):
 
@@ -127,22 +127,8 @@ El programa maneja estos tres casos e imprime las raíces o un conjunto vacío `
 
 Este proyecto está configurado para ser compilado usando CMake, lo que facilita la instalación y la portabilidad a diferentes entornos de desarrollo. El archivo de prueba permite verificar la correcta implementación de la fórmula cuadrática sin depender de pruebas manuales.
 
-### Subir a GitHub
-
-Una vez que el programa está funcionando correctamente, asegúrate de subir los cambios a GitHub:
-
-```bash
-git add .
-git commit -m "Primera versión del programa de raíces cuadráticas"
-git push origin master
-```
 
 ## Conclusión
 
 Este programa resuelve eficientemente ecuaciones cuadráticas de segundo grado usando C++. Para compilarlo y ejecutarlo, no se necesitan librerías externas, cumpliendo así con el requisito de calcular las raíces usando solo la fórmula cuadrática convencional. 
 
----
-
-Con este README, has explicado el propósito del programa, cómo compilarlo, cómo ejecutarlo, y cómo funciona el algoritmo. También has dado instrucciones claras sobre cómo correr las pruebas y qué esperar al ejecutarlas.
-
-¡Avísame si necesitas algún cambio adicional!
