@@ -41,5 +41,5 @@ int main()
     pruebaEncontrarRaices(1, -4, 3, 3, 1);
 
     // Si las raíces esperadas son correctas, se imprimirá "Prueba pasada!"
-    return 0; // El programa termina correctamente
+    return 0;
 }
