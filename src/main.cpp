@@ -29,7 +29,23 @@ void findRoots(double a, double b, double c)
     }
 }
 
-int main(int argc, char *argv[])
+// Función principal donde obtenemos los coeficientes a, b, c desde la línea de comandos
+int main(int argc, char *argv[]) // argc es el número de argumentos y argv es un arreglo de punteros a los argumentos
 {
-    return 0;
+
+    if (argc != 4)
+    {
+        std::cerr << "Uso: " << argv[0] << " a b c" << std::endl;
+        return 1; // Terminamos con un código de error si no hay tres argumentos
+    }
+
+    // Convertimos los argumentos a números de tipo double
+    double a = std::stod(argv[1]);
+    double b = std::stod(argv[2]);
+    double c = std::stod(argv[3]);
+
+    // Llamamos a la función que calcula las raíces
+    findRoots(a, b, c);
+
+    return 0; // Finalizamos el programa correctamente
 }
