@@ -1,0 +1,11 @@
+# Ignore build directory and binaries
+/build/
+*.o
+*.exe
+*.out
+
+# MacOS files
+.DS_Store
+
+# Linux generated files
+*.swp
