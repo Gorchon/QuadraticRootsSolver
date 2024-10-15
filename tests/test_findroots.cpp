@@ -1,6 +1,19 @@
-#include <iostream> // Para mostrar mensajes en consola
-#include <cassert>  // Para usar assert, que nos ayuda a verificar los resultados
-#include <cmath>    // Para funciones matemáticas como sqrt (raíz cuadrada) y fabs (valor absoluto)
+// Hecho por: José María Soto Vzla
+// Fecha: 15 de Octubre, 2024
+
+// Explicación:
+// Este archivo se creó para realizar pruebas automáticas del código que calcula las raíces
+// de una ecuación cuadrática. El propósito es verificar que, dado un conjunto de coeficientes
+// de una ecuación cuadrática, las raíces calculadas sean correctas comparadas con las raíces esperadas.
+//
+// Usamos la función `assert` para comprobar automáticamente si los valores que obtenemos son correctos.
+// Esto nos ahorra tener que hacer pruebas manuales y nos permite detectar errores fácilmente.
+// Si la prueba pasa, se imprime "Prueba pasada!". Si no, `assert` detiene el programa y nos indica dónde está el error.
+
+// Librerías incluidas
+#include <iostream>
+#include <cassert> // Esta librería es interesante porque nos permite hacer pruebas de nuestro código usando assert
+#include <cmath>   // Para funciones matemáticas como sqrt (raíz cuadrada) y fabs (valor absoluto)
 
 // Esta función simula el cálculo de las raíces de una ecuación cuadrática
 // y compara las raíces calculadas con las esperadas.

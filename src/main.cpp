@@ -1,6 +1,8 @@
+// Hecho por: José María Soto Vzla
+// Fecha: 15 de Octubre, 2024
 #include <iostream>
-#include <cmath>  // for sqrt function
-#include <limits> // for numeric limits
+#include <cmath>
+#include <limits>
 
 // Funcion para calcular las raices de una ecuacion cuadratica  ax^2 + bx + c = 0
 // a, b, c are the coefficients of the equation
