@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cmath>
 #include <limits>
+#include <sstream>
 
 // Funcion para calcular las raices de una ecuacion cuadratica  ax^2 + bx + c = 0
 // a, b, c are the coefficients of the equation
@@ -31,6 +32,14 @@ void findRoots(double a, double b, double c)
     }
 }
 
+// Función para convertir un string a double
+double stringToDouble(const std::string &str)
+{
+    std::stringstream ss(str);
+    double result;
+    ss >> result;
+    return result;
+}
 // Función principal donde obtenemos los coeficientes a, b, c desde la línea de comandos
 int main(int argc, char *argv[]) // argc es el número de argumentos y argv es un arreglo de punteros a los argumentos
 {
@@ -42,9 +51,9 @@ int main(int argc, char *argv[]) // argc es el número de argumentos y argv es u
     }
 
     // Convertimos los argumentos a números de tipo double
-    double a = std::stod(argv[1]);
-    double b = std::stod(argv[2]);
-    double c = std::stod(argv[3]);
+    double a = stringToDouble(argv[1]);
+    double b = stringToDouble(argv[2]);
+    double c = stringToDouble(argv[3]);
 
     // Llamamos a la función que calcula las raíces
     findRoots(a, b, c);
