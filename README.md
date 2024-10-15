@@ -4,11 +4,19 @@ Este programa está diseñado para calcular las raíces reales de una ecuación 
 
 ![Descripción de la imagen](/images/imageForReadme.jpg)
 
-Básicamente, lo que hace es que toma tres valores (los coeficientes a, b, y c) que introduces desde la línea de comandos, y luego te devuelve las raíces reales de esa ecuación, si es que existen. Si no hay raíces reales (por ejemplo, si el discriminante es negativo), el programa te mostrará un conjunto vacío `{}`.
 
 ## Objetivo
 
-El objetivo de este programa es resolver ecuaciones cuadráticas de segundo grado, calculando sus raíces reales utilizando la fórmula cuadrática clásica, sin el uso de bibliotecas externas para el cálculo.
+El objetivo con este script es resolver ecuaciones cuadráticas de segundo grado, calculando sus raíces reales utilizando la fórmula cuadrática de toda la vida, sin el uso de bibliotecas externas para el cálculo.
+
+El programa recibe tres valores (los coeficientes a, b, y c) como argumentos. A partir de esos coeficientes, calcula las raíces reales de la ecuación cuadrática ax^2 + bx + c = 0.
+
+	•	Si la ecuación tiene soluciones reales (cuando el discriminante es positivo o cero), el programa te devolverá esas raíces.
+	•	Si el discriminante es negativo, lo que indica que no existen raíces reales, el programa te devolverá un conjunto vacío '{}'.
+
+Asi que este programa no solo resuelve ecuaciones cuadráticas, sino que también te indica si las soluciones son reales o inexistentes.
+
+
 
 ## Instrucciones para Compilar y Ejecutar
 
